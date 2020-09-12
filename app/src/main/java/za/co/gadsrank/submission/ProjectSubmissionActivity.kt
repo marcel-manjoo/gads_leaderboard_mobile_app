@@ -113,11 +113,13 @@ class ProjectSubmissionActivity : AppCompatActivity(), CoroutineScope {
                 override fun onResponse(call: Call<Void>, response: Response<Void>) {
                     if (response.isSuccessful) {
                         Log.d(TAG, "Data submitted successfully")
+                        displaySuccessDialog()
                     }
                 }
 
                 override fun onFailure(call: Call<Void>, t: Throwable) {
                     Log.d(TAG, "${t.message}")
+                    displayNotSuccessDialog()
                 }
 
             })
