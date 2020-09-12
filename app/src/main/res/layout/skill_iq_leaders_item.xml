@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:layout_margin="@dimen/default_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_width="@dimen/image_size_double"
+            android:layout_height="@dimen/image_size"
+            app:srcCompat="@drawable/skill_iq"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_toEndOf="@id/image"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/name_text_size"
+            android:textColor="@color/black"
+            tools:text="John Doe"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_toEndOf="@id/image"
+            android:layout_below="@id/name"
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/data_text_size"
+            android:textColor="@color/black_overlay"
+            tools:text="John Doe"/>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

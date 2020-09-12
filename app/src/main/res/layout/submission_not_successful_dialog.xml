@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_corners_dialog">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_margin="@dimen/margin"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/success_image"
+        android:layout_width="@dimen/image_size_double"
+        android:layout_height="@dimen/image_size_double"
+        app:srcCompat="@drawable/ic_baseline_error_24"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_below="@+id/success_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submission_not_successful"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textSize="@dimen/toolbar_title_size"
+        android:textColor="@color/close_color"/>
+
+</RelativeLayout>

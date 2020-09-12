@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="image_size">48dp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+    <dimen name="name_text_size">14sp</dimen>
+    <dimen name="data_text_size">12sp</dimen>
+    <dimen name="image_size_double">96dp</dimen>
+    <dimen name="submit_button_height">24dp</dimen>
+    <dimen name="toolbar_title_size">16sp</dimen>
+    <dimen name="line_separator_height">1dp</dimen>
+    <dimen name="submission_margin">80dp</dimen>
+</resources>

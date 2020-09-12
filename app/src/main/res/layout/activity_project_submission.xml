@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".submission.ProjectSubmissionActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/submission_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/gads"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/margin"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project_submission"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/toolbar_title_size"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@drawable/line_separator"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/image_size_double"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin">
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="@dimen/line_separator_height"
+                android:layout_height="@dimen/line_separator_height"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingStart="@dimen/margin"
+                android:layout_toStartOf="@+id/center"
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corners"
+                android:inputType="textPersonName"
+                android:hint="@string/first_name"
+                android:layout_marginEnd="@dimen/small_margin" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:paddingStart="@dimen/margin"
+                android:layout_toEndOf="@+id/center"
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corners"
+                android:inputType="textPersonName"
+                android:hint="@string/last_name"
+                android:layout_marginStart="@dimen/small_margin"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:paddingStart="@dimen/margin"
+            android:layout_marginTop="@dimen/submission_margin"
+            android:id="@+id/email_address"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="@drawable/round_corners"
+            android:hint="@string/email_address"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:paddingStart="@dimen/margin"
+            android:layout_marginTop="@dimen/submission_margin"
+            android:id="@+id/project_link"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_size"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="@drawable/round_corners"
+            android:hint="@string/project_on_github_link"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/image_size_double"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/image_size"
+            android:paddingEnd="@dimen/image_size"
+            android:id="@+id/project_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_size"
+            android:text="@string/submit"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbar_title_size"
+            android:background="@drawable/project_submit_btn"
+            android:layout_marginEnd="@dimen/default_margin"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
